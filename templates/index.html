@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    {% block nav %}
+        <div>
+            <a href="{{ url_for('homepage')}}">Домашняя страница</a>
+            <a href="{{ url_for('photos')}}">Мои фото</a>
+            <a href="{{ url_for('hobby')}}">Хобби</a>
+        </div>
+    {% endblock %}
+
+    {% block content %}
+        <h1>Добро пожаловать</h1>
+        <div>Это страница моего профиляю...</div>
+    {% endblock %}    
+</body>
+</html>
